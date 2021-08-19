@@ -1,2 +1,15 @@
 .App {
+	padding: 0 89px;
+}
+
+@media only screen and (max-width: 768px) {
+	.App {
+		padding: 0 40px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.App {
+		padding: 0 24px;
+	}
 }

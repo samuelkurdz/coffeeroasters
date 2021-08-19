@@ -1,0 +1,34 @@
+.topbar {
+	padding-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.topbar__items {
+	display: flex;
+	gap: 1rem;
+}
+
+.topbar__hamburger {
+	display: none;
+}
+
+.hamburger__item {
+	width: 16px;
+	height: 3px;
+	border-radius: 1.5px;
+	background-color: var(--dark-grey-blue);
+}
+
+@media only screen and (max-width: 480px) {
+	.topbar__items {
+		display: none;
+	}
+
+	.topbar__hamburger {
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+	}
+}
