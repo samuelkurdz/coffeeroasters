@@ -1,14 +1,20 @@
 .topbar {
-	padding-top: 40px;
+	margin: 40px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
+.topbar__logo, .topbar__items p {
+	cursor: pointer;
+}
+
 .topbar__items {
 	display: flex;
 	gap: 2rem;
+}
 
+.topbar__items p {
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 1px;
@@ -16,6 +22,10 @@
 	text-transform: uppercase;
 	color: var(--grey);
 }
+
+/* .topbar__items p:hover {
+	color: var(--dark-grey-blue);
+} */
 
 .topbar__hamburger {
 	display: none;
