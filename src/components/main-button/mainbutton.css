@@ -1,0 +1,30 @@
+.main-button {
+	width: 217px;
+	/* height: 56px; */
+	padding: 15.5px;
+	color: var(--light-cream);
+	border: none;
+	border-radius: 6px;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 900;
+	cursor: pointer;
+	transition: background 0.4s;
+}
+
+.main-button:focus {
+	border: none;
+}
+
+.default {
+	background: var(--dark-cyan);
+}
+
+.default:hover {
+	background: var(--light-cyan);
+}
+
+.disabled {
+	background: var(--disabled);
+	cursor: not-allowed;
+}

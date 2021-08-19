@@ -6,6 +6,8 @@
   --light-cyan: #66D2CF;
   --pale-orange: #FDD6BA;
   --footer-bg: #2C343E;
+  --disabled: #E2DEDB;
+
 }
 
 * {
@@ -21,7 +23,7 @@ body {
   background: var(--light-cream);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, button {
   font-family: 'Fraunces', sans-serif;
 }
 

@@ -1,6 +1,6 @@
 
 import './Home.css';
-import Button from '../../components/button/button';
+import MainButton from '../../components/main-button/mainbutton';
 
 const Home = () => {
 	return (
@@ -18,7 +18,9 @@ const Home = () => {
 					best roasters delivered directly to your door, at your schedule.
 				</p>
 
-				{/* <Button /> */}
+				<MainButton state="default">
+					<span>Create your plan</span>
+				</MainButton>
 			</section>
 		</div>
 	)
