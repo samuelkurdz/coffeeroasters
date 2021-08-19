@@ -11,7 +11,7 @@ const Topbar = () => {
 			<img src={logo} className="topbar__logo" alt="logo" />
 			<div className="topbar__items">
 				<p><Link to="/">Home</Link></p>
-				<p><Link to="/about">About</Link></p>
+				<p><Link to="/about">About Us</Link></p>
 				<p><Link to="/subscribe">Create Your plan</Link></p>
 			</div>
 			<div className="topbar__hamburger" onClick={() => setToggleHamburger(!toggleHamburger)}>

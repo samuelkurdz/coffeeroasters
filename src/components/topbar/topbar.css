@@ -23,9 +23,9 @@
 	color: var(--grey);
 }
 
-/* .topbar__items p:hover {
+.topbar__items p:hover {
 	color: var(--dark-grey-blue);
-} */
+}
 
 .topbar__hamburger {
 	display: none;
