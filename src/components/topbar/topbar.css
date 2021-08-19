@@ -7,7 +7,14 @@
 
 .topbar__items {
 	display: flex;
-	gap: 1rem;
+	gap: 2rem;
+
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: var(--grey);
 }
 
 .topbar__hamburger {
@@ -18,7 +25,18 @@
 	width: 16px;
 	height: 3px;
 	border-radius: 1.5px;
+	transition: all .5s;
 	background-color: var(--dark-grey-blue);
+}
+
+.hambuger--rotate__positive {
+	transform: rotate(45deg) translateY(4px);
+}
+.hambuger--display__none {
+	display: none;
+}
+.hambuger--rotate__negative {
+	transform: rotate(-45deg) translateY(-4px);
 }
 
 @media only screen and (max-width: 480px) {

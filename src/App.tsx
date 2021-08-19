@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Footer from './components/footer/footer';
 import Topbar from './components/topbar/topbar';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
