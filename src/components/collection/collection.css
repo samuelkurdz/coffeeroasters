@@ -1,0 +1,96 @@
+.collection {
+	margin-top: 130px;
+	position: relative;
+}
+
+.collection__header {
+	text-align: center;
+	opacity: 0.5;
+	
+	font-size: 11vw;
+	padding: 30px 0;
+  /* Fallback: Set a background color. */
+	background: var(--grey);
+
+  /* Create the gradient. */
+	background: linear-gradient(180deg, var(--grey) 15%, #FEFCF7 100%);
+  
+  /* Set the background size and repeat properties. */
+  /* background-size: 100%;
+  background-repeat: repeat; */
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/*  items stylings */
+
+.collection__items {
+	position: absolute;
+	top: 90px;
+	padding: 0px 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.collection__item {
+	padding: 0 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.collection__item img {
+	width: 100%;
+	height: auto;
+}
+
+.collection__item .collection__item--detail {
+	text-align: center;
+}
+
+.collection__item .collection__item--detail h4{
+	margin-bottom: 24px;
+}
+
+/*  */
+@media only screen and (max-width: 768px) {
+	.collection__header {
+		font-size: 12vw;
+	}
+
+	.collection__items {
+		flex-direction: column;
+		gap: 32px;
+	}
+	
+	.collection__item {
+		padding: 0 30px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.collection__item img {
+		width: 250px;
+		height: auto;
+	}
+	.collection__item .collection__item--detail {
+		text-align: start;
+	}
+	
+}
+
+@media only screen and (max-width: 480px) {
+	.collection__item {
+		padding: 0 10px;
+		display: flex;
+		flex-direction: column;
+	}
+}
