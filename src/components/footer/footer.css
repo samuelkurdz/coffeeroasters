@@ -1,8 +1,7 @@
 .footer {
 	background: var(--footer-bg);
 	padding: 40px 20px;
-	margin-top: 400px;
-	/* margin-top: 200px; */
+	margin-top: 200px;
 	margin-bottom: 72px;
 
 	display: flex;

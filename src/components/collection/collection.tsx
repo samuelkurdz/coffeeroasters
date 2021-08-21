@@ -43,13 +43,6 @@ const CollectionSection = () => {
 					our collection
 				</h1>
 				<div className="collection__items">
-					{/* <div className="collection__item">
-						<img src={GranEspressoImg} alt="gran" />
-						<div className="collection__item--detail">
-							<h4>Gran Espresso</h4>
-							<p>Light and flavorful blend with cocoa and black pepper for an intense experience</p>
-						</div>
-					</div> */}
 					{
 						items.map(({title, image, description}) => (
 							<div className="collection__item" key={title}>

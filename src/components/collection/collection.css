@@ -1,6 +1,5 @@
 .collection {
 	margin-top: 130px;
-	position: relative;
 }
 
 .collection__header {
@@ -30,8 +29,7 @@
 /*  items stylings */
 
 .collection__items {
-	position: absolute;
-	top: 90px;
+	margin-top: -55px;
 	padding: 0px 40px;
 	display: flex;
 	flex-direction: row;
@@ -39,6 +37,7 @@
 }
 
 .collection__item {
+	z-index: 3;
 	padding: 0 10px;
 
 	display: flex;
@@ -88,6 +87,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+	.collection__items {
+		margin-top: 0px;
+	}
 	.collection__item {
 		padding: 0 10px;
 		display: flex;

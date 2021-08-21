@@ -19,7 +19,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/subscribe" component={Subscribe} />  
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
