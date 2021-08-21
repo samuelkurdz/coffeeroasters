@@ -89,10 +89,15 @@
 @media only screen and (max-width: 480px) {
 	.collection__items {
 		margin-top: 0px;
+		padding: 0px;
 	}
 	.collection__item {
 		padding: 0 10px;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.collection__item .collection__item--detail {
+		text-align: center;
 	}
 }

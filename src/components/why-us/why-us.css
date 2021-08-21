@@ -1,0 +1,52 @@
+.whyUs {
+	margin-top: 180px;
+}
+
+.whyUs__largeCard {
+	height: 570px;
+	width: 100%;
+	background: var(--footer-bg);
+	color: var(--light-cream);
+	border-radius: 8px;
+	
+	padding-top: 100px;
+	text-align: center;
+}
+
+.whyUs__largeCard__title {
+	margin-bottom: 32px;
+}
+.whyUs__largeCard__text {
+	width: 540px;
+	margin: 0 auto;
+}
+
+/* h2.whyUs__largeCard__title {
+	display: block;
+} */
+
+h3.whyUs__largeCard__title {
+	display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.whyUs__largeCard__title {
+		margin-bottom: 24px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	h2.whyUs__largeCard__title {
+		display: none;
+	}
+
+	h3.whyUs__largeCard__title {
+		display: block;
+	}
+
+	.whyUs__largeCard__text {
+		padding: 0 24px;
+		width: 100%;
+	}
+}
