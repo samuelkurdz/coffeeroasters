@@ -55,12 +55,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-	.howItWorks__item {
-	}
-	
-	.howItWorks__item h1 {
-
-	}
 	.howItWorks__item h3 {
 		font-size: 28px;
 	}
@@ -78,5 +72,56 @@
 	.howItWorks__item h3 {
 		margin-bottom: 24px;
 		padding-right: 0;
+	}
+}
+
+
+.howItWorks__steps {
+	display: flex;
+	gap: 24.5vw;
+	margin-bottom: 80px;
+	position: relative;
+}
+
+.howItWorks__steps__line {
+	position: absolute;
+	width: 53.5vw;
+	height: 3px;
+	background: var(--pale-orange);
+	top: 45%;
+	left: 0;
+	z-index: 1;
+}
+
+.howItWorks__steps .howItWorks__steps__ring {
+	border-radius: 100%;
+	background: var(--light-cream);
+	border: 2px solid var(--dark-cyan);
+	width: 31px;
+	height: 31px;
+	z-index: 3;
+}
+
+@media only screen and (max-width: 1024px) {
+	.howItWorks__steps {
+		display: flex;
+		gap: 27vw;
+	}
+	.howItWorks__steps__line {
+		width: 63vw;
+}
+}
+
+@media only screen and (max-width: 768px) {
+	.howItWorks__steps {
+		display: flex;
+		gap: 26.5vw;
+		margin-bottom: 45px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.howItWorks__steps {
+		display: none;
 	}
 }

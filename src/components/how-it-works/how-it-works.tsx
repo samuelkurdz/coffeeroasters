@@ -30,6 +30,12 @@ const HowItWorks = () => {
 	return (
 		<div className="howItWorks">
 			<h4>How it works</h4>
+			<div className="howItWorks__steps">
+				<div className="howItWorks__steps__line"></div>
+				<div className="howItWorks__steps__ring"></div>
+				<div className="howItWorks__steps__ring"></div>
+				<div className="howItWorks__steps__ring"></div>
+			</div>
 			<div className="howItWorks__container">
 				{
 					items.map(({title, header, description}) => (
