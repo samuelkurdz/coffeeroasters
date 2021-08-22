@@ -27,6 +27,7 @@ const SubHero = ({children, bgImages}: subHeroProps) => {
 	const styles: CSSProperties = {
 		backgroundImage: `url(${bgBySize})`,
 	}
+
 	return (
 		<div className="subHero" style={styles}>
 			{children}
