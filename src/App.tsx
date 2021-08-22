@@ -9,10 +9,12 @@ import Home from './pages/home/Home';
 
 import Topbar from './components/topbar/topbar';
 import Footer from './components/footer/footer';
+import ScrollToTop from './utils/scroll-to-top';
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Topbar />
       <Switch>
         <Route path="/" component={Home} exact />
