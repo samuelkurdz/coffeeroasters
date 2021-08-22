@@ -18,6 +18,9 @@
 .commit__Detail h3 {
 	display: none;
 }
+.commit__Detail p {
+	max-width: 540px;
+}
 
 @media only screen and (max-width: 768px) {
 	.commitment {

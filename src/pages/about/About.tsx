@@ -68,6 +68,10 @@ const About = () => {
 					</p>
 				</div>
 			</div>
+
+			{/* <div className="quality">
+
+			</div> */}
 		</div>
 	)
 };

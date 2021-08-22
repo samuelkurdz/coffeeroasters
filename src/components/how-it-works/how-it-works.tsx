@@ -9,6 +9,10 @@ interface CollectionItem {
 	header: string;
 }
 
+type HowItWorksProps = {
+	theme?: 'light' | 'dark';
+};
+
 const items: CollectionItem[] = [
 	{
 		title: '01',
@@ -28,10 +32,15 @@ const items: CollectionItem[] = [
 	},
 ];
 
-const HowItWorks = () => {
+const HowItWorks = ({theme}: HowItWorksProps) => {
 	return (
-		<div className="howItWorks">
-			<h4>How it works</h4>
+		<div className={`howItWorks ${theme}`}>
+			{
+				theme && theme === 'dark' ?
+					null: (
+						<h4>How it works</h4>
+					)
+			}
 			<div className="howItWorks__steps">
 				<div className="howItWorks__steps__line"></div>
 				<div className="howItWorks__steps__ring"></div>
@@ -50,11 +59,16 @@ const HowItWorks = () => {
 				}
 			</div>
 
-			<Link to="/subscribe">
-				<MainButton state="default">
-					<span>Create your plan</span>
-				</MainButton>
-			</Link>
+			{
+				theme && theme === 'dark' ?
+					null: (
+						<Link to="/subscribe">
+						<MainButton state="default">
+							<span>Create your plan</span>
+						</MainButton>
+					</Link>
+					)
+			}
 		</div>
 	)
 }

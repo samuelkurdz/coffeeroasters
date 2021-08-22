@@ -27,7 +27,7 @@ const Subscribe = () => {
 					</p>
 				</div>
 			</SubHero>
-			<HowItWorks />
+			<HowItWorks theme="dark" />
 		</div>
 	)
 };
