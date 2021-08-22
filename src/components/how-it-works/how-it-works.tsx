@@ -1,4 +1,5 @@
 
+import MainButton from '../main-button/mainbutton';
 import './how-it-works.css';
 
 interface CollectionItem {
@@ -39,7 +40,7 @@ const HowItWorks = () => {
 			<div className="howItWorks__container">
 				{
 					items.map(({title, header, description}) => (
-						<div className="howItWorks__item">
+						<div className="howItWorks__item" key={title}>
 							<h1>{title}</h1>
 							<h3>{header}</h3>
 							<p>{description}</p>
@@ -47,6 +48,10 @@ const HowItWorks = () => {
 					))
 				}
 			</div>
+
+			<MainButton state="default">
+				<span>Create your plan</span>
+		</MainButton>
 		</div>
 	)
 }

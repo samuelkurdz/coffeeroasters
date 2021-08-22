@@ -3,7 +3,7 @@ import './mainbutton.css';
 
 type ButtonProps = {
   children: JSX.Element;
-	state: 'default' | 'disabled'
+	state: 'default' | 'disabled',
 };
 
 const MainButton = ({children, state}: ButtonProps) => {
