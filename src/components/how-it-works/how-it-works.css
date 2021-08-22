@@ -9,7 +9,7 @@
 
 .howItWorks__container {
 	display: flex;
-	gap: 95px;
+	gap: 6.6vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -17,14 +17,12 @@
 		margin-top: 145px;
 	}
 	.howItWorks h4 {
-		text-align: center;
 		margin-bottom: 40px;
 	}
 
 	.howItWorks__container {
 		display: flex;
 		gap: 10px;
-		/* justify-content: space-between; */
 	}
 }
 
