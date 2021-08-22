@@ -6,12 +6,54 @@
 	background-repeat: no-repeat;
 }
 
+.subHero__children .displayOnDesktop {
+	display: block;
+}
+.subHero__children .displayOnTab {
+	display: none;
+}
+
 @media only screen and (max-width: 768px) {
 	.subHero {
 		height: 400px
 	}
+	.subHero__children .displayOnDesktop {
+		display: none;
+	}
+	.subHero__children .displayOnTab {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 480px) {
+
+}
+
+.subHero__children {
+	color: var(--light-cream);
+	padding-top: 135px;
+	padding-left: 85px;
+}
+
+.subHero__children h1, .subHero__children h2, .subHero__children h3 {
+	margin-bottom: 28px;
+}
+
+.subHero__children p {
+	width: 445px;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+	.subHero__children {
+		padding: 110px 24px;
+		text-align: center;
+	}
+	.subHero__children p {
+		width: fit-content;
+	}
 	
 }

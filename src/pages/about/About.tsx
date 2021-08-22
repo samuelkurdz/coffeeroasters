@@ -16,8 +16,18 @@ const About = () => {
 	};
 	return (
 		<div className="About">
-			<SubHero bgImages={backgroundImages}/>
-			<p>About</p>
+			<SubHero bgImages={backgroundImages}>
+			<div className="subHero__children">
+					<h2 className="displayOnDesktop">About Us</h2>
+					<h3 className="displayOnTab">About US</h3>
+					<p>
+						Coffeeroasters began its journey of exotic discovery in 1999,
+						highlighting stories of coffee from around the world.
+						We have since been dedicated to bring the perfect
+						cup - from bean to brew - in every shipment.
+					</p>
+				</div>
+			</SubHero>
 		</div>
 	)
 };

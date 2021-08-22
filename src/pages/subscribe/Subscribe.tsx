@@ -17,7 +17,16 @@ const Subscribe = () => {
 	};
 	return (
 		<div className="Subscribe">
-			<SubHero bgImages={backgroundImages} />
+			<SubHero bgImages={backgroundImages}>
+				<div className="subHero__children">
+					<h1 className="displayOnDesktop">Create a plan</h1>
+					<h2 className="displayOnTab">Create a plan</h2>
+					<p>Build a subscription plan that best fits your needs.
+						We offer an assortment of the best artisan coffees
+						from around the globe delivered fresh to your door.
+					</p>
+				</div>
+			</SubHero>
 			<HowItWorks />
 		</div>
 	)
