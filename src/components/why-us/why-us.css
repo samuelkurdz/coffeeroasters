@@ -21,22 +21,25 @@
 	margin: 0 auto;
 }
 
-/* h2.whyUs__largeCard__title {
-	display: block;
-} */
-
 h3.whyUs__largeCard__title {
 	display: none;
 }
 
 
 @media only screen and (max-width: 768px) {
+	.whyUs__largeCard {
+		padding-top: 55px;
+	}
 	.whyUs__largeCard__title {
 		margin-bottom: 24px;
 	}
 }
 
 @media only screen and (max-width: 480px) {
+	.whyUs__largeCard {
+		padding-top: 60px;
+		height: 900px;
+	}
 	h2.whyUs__largeCard__title {
 		display: none;
 	}
@@ -48,5 +51,96 @@ h3.whyUs__largeCard__title {
 	.whyUs__largeCard__text {
 		padding: 0 24px;
 		width: 100%;
+	}
+}
+
+/*  */
+
+.whyUs__container {
+	color: var(--light-cream);
+	display: flex;
+	gap: 30px;
+
+	margin-top: -225px;
+	justify-content: center;
+	/* padding: 0 85px; */
+}
+
+.whyUs__smallCard {
+	background: var(--dark-cyan);
+	border-radius: 8px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 56px;
+	padding: 72px 45px 48px;
+}
+
+.whyUs__smallCard img {
+	width: 72px;
+	height: auto;
+}
+
+.whyUs__smallCard__detail {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 24px;
+	width: 225px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.whyUs__container {
+    color: var(--light-cream);
+    display: flex;
+    gap: 15px;
+    margin-top: -225px;
+    justify-content: center;
+	}
+
+	.whyUs__smallCard {
+		width: 25vw;
+	}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.whyUs__container {
+		flex-direction: column;
+		align-items: center;
+		margin-top: -300px;
+		gap: 24px;
+	}
+	.whyUs__smallCard {
+		flex-direction: row;
+		padding: 40px 70px 48px;
+		width: 74vw;
+	}
+	.whyUs__smallCard img {
+		width: 55px;
+	}
+	.whyUs__smallCard__detail {
+		text-align: start;
+		gap: 24px;
+		width: 340px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.whyUs__container {
+		margin-top: -575px;
+		padding: 0 25px;
+	}
+	.whyUs__smallCard {
+		flex-direction: column;
+		padding: 72px 45px 48px;
+		width: 73.5vw;
+	}
+	.whyUs__smallCard__detail {
+		text-align: center;
+		width: 225px;
 	}
 }

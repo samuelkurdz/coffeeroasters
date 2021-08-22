@@ -34,7 +34,7 @@ const items: CollectionItem[] = [
 		description: 'Ethiopian hand-harvested blend densely packed with vibrant fruit notes',
 		image: Dancheimg
 	},
-]
+];
 
 const CollectionSection = () => {
 	return (
