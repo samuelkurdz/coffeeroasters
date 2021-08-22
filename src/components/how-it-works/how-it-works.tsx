@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import MainButton from '../main-button/mainbutton';
 import './how-it-works.css';
 
@@ -49,9 +50,11 @@ const HowItWorks = () => {
 				}
 			</div>
 
-			<MainButton state="default">
-				<span>Create your plan</span>
-		</MainButton>
+			<Link to="/subscribe">
+				<MainButton state="default">
+					<span>Create your plan</span>
+				</MainButton>
+			</Link>
 		</div>
 	)
 }

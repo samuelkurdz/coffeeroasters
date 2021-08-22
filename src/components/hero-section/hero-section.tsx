@@ -2,6 +2,7 @@
 import './hero-section.css';
 
 import MainButton from '../main-button/mainbutton';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
 	return (
@@ -18,9 +19,11 @@ const HeroSection = () => {
 			best roasters delivered directly to your door, at your schedule.
 		</p>
 
-		<MainButton state="default">
-			<span>Create your plan</span>
-		</MainButton>
+			<Link to="/subscribe">
+				<MainButton state="default">
+					<span>Create your plan</span>
+				</MainButton>
+			</Link>
 	</section>
 	)
 }
