@@ -8,6 +8,7 @@
 	align-items: center;
 	color: var(--grey);
 	margin-bottom: 55px;
+	cursor: pointer;
 }
 
 .planGroup .planGroup__title svg {
@@ -59,6 +60,8 @@
 		display: none;
 	}
 	.planGroup h3.planGroup__title {
-		display: block;
+		display: flex;
+		justify-content: space-between;
+		gap: 0;
 	}
 }

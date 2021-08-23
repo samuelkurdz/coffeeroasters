@@ -4,6 +4,7 @@
 	background: #F4F1EB;
 	color: var(--dark-grey-blue);
 	height: 250px;
+	cursor: pointer;
 }
 
 .planCard:hover {
