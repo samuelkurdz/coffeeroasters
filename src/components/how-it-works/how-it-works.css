@@ -141,8 +141,6 @@
 	padding-bottom: 40px;
 	border-radius: 10px;
 
-	width: 100vw;
-  margin-left: -24px;
 }
 .howItWorks.dark .howItWorks__steps .howItWorks__steps__ring {
 	background: var(--footer-bg) ;
@@ -165,6 +163,8 @@
 @media only screen and (max-width: 480px) {
 	.howItWorks.dark {
 		padding: 80px 15px 20px;
+		width: 100vw;
+		margin-left: -24px;
 	}
 	.howItWorks.dark p, .howItWorks.dark h3 {
 		color: white;

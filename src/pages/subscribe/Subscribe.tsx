@@ -8,6 +8,7 @@ import HowItWorks from '../../components/how-it-works/how-it-works';
 import SubHero from '../../components/sub-hero/sub-hero';
 
 import { BgImages } from '../../interfaces/styles.interface';
+import PlanContainer from '../../components/plan-container/plan-container';
 
 const Subscribe = () => {
 	const backgroundImages: BgImages = {
@@ -28,6 +29,8 @@ const Subscribe = () => {
 				</div>
 			</SubHero>
 			<HowItWorks theme="dark" />
+
+			<PlanContainer />
 		</div>
 	)
 };
