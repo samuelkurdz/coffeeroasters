@@ -13,3 +13,8 @@ export interface Plan {
 	title: string;
 	description: string;
 }
+
+export interface PlanSection {
+	id: string;
+	title: string;
+}
