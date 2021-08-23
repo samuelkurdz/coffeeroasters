@@ -135,7 +135,7 @@
 
 /* dark how it works */
 .howItWorks.dark {
-	background: var(--dark-grey-blue);
+	background: var(--footer-bg);
 	padding-top: 115px;
 	padding-left: 85px;
 	padding-bottom: 40px;
@@ -145,7 +145,7 @@
   margin-left: -24px;
 }
 .howItWorks.dark .howItWorks__steps .howItWorks__steps__ring {
-	background: var(--dark-grey-blue) ;
+	background: var(--footer-bg) ;
 }
 
 .howItWorks.dark p, .howItWorks.dark h3 {
