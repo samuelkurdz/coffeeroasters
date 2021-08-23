@@ -116,7 +116,7 @@
 	}
 	.howItWorks__steps__line {
 		width: 63vw;
-}
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -130,5 +130,44 @@
 @media only screen and (max-width: 480px) {
 	.howItWorks__steps {
 		display: none;
+	}
+}
+
+/* dark how it works */
+.howItWorks.dark {
+	background: var(--footer-bg);
+	padding-top: 115px;
+	padding-left: 85px;
+	padding-bottom: 40px;
+	border-radius: 10px;
+
+}
+.howItWorks.dark .howItWorks__steps .howItWorks__steps__ring {
+	background: var(--footer-bg) ;
+}
+
+.howItWorks.dark p, .howItWorks.dark h3 {
+	color: white;
+	padding-right: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.howItWorks.dark {
+		padding-left: 20px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 480px) {
+	.howItWorks.dark {
+		padding: 80px 15px 20px;
+		width: 100vw;
+		margin-left: -24px;
+	}
+	.howItWorks.dark p, .howItWorks.dark h3 {
+		color: white;
+		padding-right: 0;
 	}
 }

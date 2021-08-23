@@ -1,6 +1,7 @@
 .subHero {
 	height: 450px;
 	border-radius: 10px;
+	margin-bottom: 160px;
 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -15,7 +16,8 @@
 
 @media only screen and (max-width: 768px) {
 	.subHero {
-		height: 400px
+		height: 400px;
+		margin-bottom: 140px;
 	}
 	.subHero__children .displayOnDesktop {
 		display: none;
@@ -26,7 +28,9 @@
 }
 
 @media only screen and (max-width: 480px) {
-
+	.subHero {
+		margin-bottom: 120px;
+	}
 }
 
 .subHero__children {
@@ -44,7 +48,10 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+	.subHero__children {
+		padding-top: 120px;
+		padding-left: 55px;
+	}
 }
 
 @media only screen and (max-width: 480px) {

@@ -1,0 +1,47 @@
+.commitment {
+	display: flex;
+	gap: 125px;
+	align-items: center;
+}
+
+.commit__Img {
+	width: 445px;
+	height: 520px;
+	border-radius: 8px;
+}
+
+.commit__Detail h2, .commit__Detail h3 {
+	margin-bottom: 30px;
+	color: var(--dark-grey-blue);
+}
+
+.commit__Detail h3 {
+	display: none;
+}
+.commit__Detail p {
+	max-width: 540px;
+}
+
+@media only screen and (max-width: 768px) {
+	.commitment {
+		gap: 60px;
+	}
+	.commit__Detail h2 {
+		display: none;
+	}
+	.commit__Detail h3 {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.commitment {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.commit__Img {
+		width: 100%;
+		height: 400px;
+	}
+}

@@ -1,6 +1,6 @@
 
 import { CSSProperties } from 'react';
-import { BgImages } from '../../interfaces/styles.interface';
+import { BgImages } from '../../interfaces/interface';
 import useMediaQuery from '../../utils/useMedia';
 import './sub-hero.css';
 
