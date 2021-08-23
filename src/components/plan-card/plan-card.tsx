@@ -1,11 +1,16 @@
 
 import './plan-card.css';
 
+type planCardProps = {
+	title: string;
+	description: string;
+}
 
-const PlanCard = () => {
+const PlanCard = ({title, description}: planCardProps) => {
 	return (
 		<div className="planCard">
-			<p>Plan Card</p>
+			<h4>{title}</h4>
+			<p>{description}</p>
 		</div>
 	)
 };
