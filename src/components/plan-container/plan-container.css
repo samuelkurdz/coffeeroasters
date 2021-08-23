@@ -2,7 +2,7 @@
 	margin-top: 160px;
 	padding: 0 6vw;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	gap: 120px;
 }
 

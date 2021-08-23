@@ -9,6 +9,7 @@ import SubHero from '../../components/sub-hero/sub-hero';
 
 import { BgImages } from '../../interfaces/interface';
 import PlanContainer from '../../components/plan-container/plan-container';
+import Summary from '../../components/summary/summary';
 
 const Subscribe = () => {
 	const backgroundImages: BgImages = {
@@ -31,6 +32,8 @@ const Subscribe = () => {
 			<HowItWorks theme="dark" />
 
 			<PlanContainer />
+
+			<Summary />
 		</div>
 	)
 };
