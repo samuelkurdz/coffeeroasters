@@ -18,3 +18,9 @@ export interface PlanSection {
 	id: string;
 	title: string;
 }
+
+export interface CollectionItem {
+	title: string;
+	description: string;
+	header: string;
+}

@@ -1,6 +1,6 @@
 import { PlanGroupInterface } from "../interfaces/interface";
 
-export const Plans: PlanGroupInterface[] = [
+export const plans: PlanGroupInterface[] = [
 	{
 		header: 'How do you drink your coffee?',
 		plans: [
