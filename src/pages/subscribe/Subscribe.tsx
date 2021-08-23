@@ -7,7 +7,7 @@ import './Subscribe.css';
 import HowItWorks from '../../components/how-it-works/how-it-works';
 import SubHero from '../../components/sub-hero/sub-hero';
 
-import { BgImages } from '../../interfaces/styles.interface';
+import { BgImages } from '../../interfaces/interface';
 import PlanContainer from '../../components/plan-container/plan-container';
 
 const Subscribe = () => {

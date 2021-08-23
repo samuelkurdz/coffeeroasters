@@ -10,7 +10,7 @@ import TabletCommitImg from '../../assets/about/tablet/image-commitment.jpg';
 import MobileCommitImg from '../../assets/about/mobile/image-commitment.jpg';
 
 import SubHero from '../../components/sub-hero/sub-hero';
-import { BgImages } from '../../interfaces/styles.interface';
+import { BgImages } from '../../interfaces/interface';
 import useMediaQuery from '../../utils/useMedia';
 
 const About = () => {

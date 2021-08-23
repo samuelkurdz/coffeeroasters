@@ -1,6 +1,8 @@
 
-import PlanGroup from '../plan-group/plan-group';
 import './plan-container.css';
+
+import PlanGroup from '../plan-group/plan-group';
+import { Plans } from '../../hard-data/plans';
 
 const sections = [
 	{
@@ -38,7 +40,13 @@ const PlanContainer = () => {
 					))
 				}
 			</div>
-			<PlanGroup />
+			<div className="planGroups__Conatainer">
+				{
+					Plans.map(({header, plans}) => (
+						<PlanGroup header={header} plans={plans} key={header} />
+					))
+				}
+			</div>
 		</div>
 	)
 };
