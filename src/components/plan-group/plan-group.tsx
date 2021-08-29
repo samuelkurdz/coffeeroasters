@@ -20,9 +20,9 @@ const PlanGroup = ({header, plans}: PlanGroupInterface) => {
 			<h2 className="planGroup__title" onClick={handleTitleClick}>
 				{header} <CaretDownIcon className={`${isPlansVisible ? 'rotateIcon' : ''}`} />
 			</h2>
-			<h3 className="planGroup__title" onClick={handleTitleClick}>
-				{header} <CaretDownIcon />
-			</h3>
+			<h4 className="planGroup__title" onClick={handleTitleClick}>
+			{header} <CaretDownIcon className={`${isPlansVisible ? 'rotateIcon' : ''}`} />
+			</h4>
 			<div className="groupPlanTypes">
 				{
 					isPlansVisible ?

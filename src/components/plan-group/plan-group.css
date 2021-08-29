@@ -53,7 +53,7 @@
 
 
 
-.planGroup h3.planGroup__title {
+.planGroup h4.planGroup__title {
 	display: none;
 }
 
@@ -61,7 +61,7 @@
 	.planGroup h2.planGroup__title {
 		display: none;
 	}
-	.planGroup h3.planGroup__title {
+	.planGroup h4.planGroup__title {
 		display: flex;
 		justify-content: space-between;
 		gap: 0;
