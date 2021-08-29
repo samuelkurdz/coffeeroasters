@@ -5,20 +5,31 @@ import PlanCard from '../plan-card/plan-card';
 import {ReactComponent as CaretUpIcon} from '../../assets/shared/caretUp.svg';
 import {ReactComponent as CaretDownIcon} from '../../assets/shared/caretUp.svg';
 import { PlanGroupInterface } from '../../interfaces/interface';
+import { useState } from 'react';
 
 
 const PlanGroup = ({header, plans}: PlanGroupInterface) => {
+	const [isPlansVisible, togglePlanVisibility] = useState(true);
+
+	function handleTitleClick() {
+		togglePlanVisibility(!isPlansVisible);
+	};
+
 	return (
 		<div className="planGroup">
-			<h2 className="planGroup__title">{header} <CaretDownIcon />
+			<h2 className="planGroup__title" onClick={handleTitleClick}>
+				{header} <CaretDownIcon className={`${isPlansVisible ? 'rotateIcon' : ''}`} />
 			</h2>
-			<h3 className="planGroup__title">{header} <CaretDownIcon />
+			<h3 className="planGroup__title" onClick={handleTitleClick}>
+				{header} <CaretDownIcon />
 			</h3>
 			<div className="groupPlanTypes">
 				{
+					isPlansVisible ?
 					plans.map(({title, description}) => (
-						<PlanCard title={title} description={description} />
-					))
+						<PlanCard title={title} description={description} key={title} />
+					)) :
+					null
 				}
 			</div>
 		</div>
