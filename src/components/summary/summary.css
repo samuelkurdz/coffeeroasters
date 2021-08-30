@@ -24,6 +24,13 @@
 	line-height: 1.67;
 }
 
+.summary span {
+	font-family: Fraunces, serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--dark-cyan)
+}
+
 @media only screen and (max-width: 768px) {
 	.summary {
 		width: 100%;
