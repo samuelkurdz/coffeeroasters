@@ -2,7 +2,6 @@
 import './plan-group.css';
 
 import PlanCard from '../plan-card/plan-card';
-import {ReactComponent as CaretUpIcon} from '../../assets/shared/caretUp.svg';
 import {ReactComponent as CaretDownIcon} from '../../assets/shared/caretUp.svg';
 import { PlanGroupInterface } from '../../interfaces/interface';
 import { useState } from 'react';
