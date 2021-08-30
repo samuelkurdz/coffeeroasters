@@ -14,7 +14,7 @@
 
 .planGroup .planGroup__title svg {
 	fill: var(--dark-cyan);
-	transition: all .5s;
+	transition: all .3s;
 }
 
 .planGroup .planGroup__title:hover svg {
